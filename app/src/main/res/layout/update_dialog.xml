@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp">
+ <ScrollView
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical"
+         android:gravity="center"
+         android:padding="10dp">
+    <ImageView
+        android:id="@+id/imageViewRecord"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimaryDark"
+        android:src="@drawable/addphoto"/>
+
+    <EditText
+        android:id="@+id/etTituloRecord"
+        android:hint="Titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"/>
+    <EditText
+        android:id="@+id/etDescripcionRecord"
+        android:layout_below="@+id/etTitulo"
+        android:hint="Descripcion"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+         <EditText
+             android:id="@+id/etValorRecord"
+             android:hint="Valor"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:ems="10"/>
+    <EditText
+        android:id="@+id/etComunaRecord"
+        android:hint="Comuna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"/>
+
+    <EditText
+        android:id="@+id/etCategoriaRecord"
+        android:layout_below="@+id/etComuna"
+        android:hint="Categoria"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnActualizarRecord"
+        android:text="Actualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+     </LinearLayout>
+ </ScrollView>
+</LinearLayout>

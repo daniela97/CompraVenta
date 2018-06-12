@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:padding="10dp">
+   <ImageView
+          android:id="@+id/imageView"
+          android:layout_width="160dp"
+          android:layout_alignParentTop="true"
+          android:background="@color/colorPrimaryDark"
+          android:src="@drawable/addphoto"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="18dp"
+          android:layout_height="160dp" />
+      <EditText
+          android:id="@+id/etTitulo"
+          android:layout_below="@+id/imageView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:hint="Titulo"
+          android:layout_centerHorizontal="true"
+          android:ems="10"/>
+      <EditText
+          android:id="@+id/etDescripcion"
+          android:layout_below="@+id/etTitulo"
+          android:hint="Descripcion"
+          android:ems="10"
+          android:layout_centerHorizontal="true"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+      <EditText
+          android:id="@+id/etValor"
+          android:layout_below="@+id/etDescripcion"
+          android:hint="Valor"
+          android:ems="10"
+          android:layout_centerHorizontal="true"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+      <EditText
+          android:id="@+id/etComuna"
+          android:layout_below="@+id/etValor"
+          android:hint="Comuna"
+          android:ems="10"
+          android:layout_centerHorizontal="true"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+      <!--<EditText
+          android:id="@+id/etRutAlumno"
+          android:layout_below="@+id/etCiudad"
+          android:hint="Rut Alumno"
+          android:ems="10"
+          android:layout_centerHorizontal="true"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />-->
+      <EditText
+          android:id="@+id/etCategoria"
+          android:layout_below="@+id/etComuna"
+          android:hint="Categoria"
+          android:ems="10"
+          android:layout_centerHorizontal="true"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+
+
+
+      <Button
+          android:id="@+id/btnEnviar"
+          android:layout_below="@id/etCategoria"
+          android:layout_centerHorizontal="true"
+          android:minWidth="160dp"
+          android:text="Enviar"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+
+
+      <Button
+          android:id="@+id/btnLista"
+          android:layout_below="@id/btnEnviar"
+          android:layout_centerHorizontal="true"
+          android:minWidth="160dp"
+          android:text="Lista"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+
+
+
+
+
+  </RelativeLayout>
+
+</ScrollView>
